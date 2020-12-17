@@ -1,7 +1,7 @@
 # Case-study #3
 # Developers: Marinkin O. (85%),
-# Seledtsov A. (%),
-# Evdischenko M. (%)
+# Seledtsov A. (30%),
+# Evdischenko M. (30%)
 
 from decimal import Decimal
 from prettytable import PrettyTable
