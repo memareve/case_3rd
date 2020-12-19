@@ -37,8 +37,8 @@ if d == 'месяц':
             print(i, 'год')
             tb.field_names = ['месяц', 'основа инвестиций', 'сумма % за месяц', 'капитал']
             for j in range(1, 13):
-                tb.add_row([j, Decimal(s).quantize(Decimal("1.00")), Decimal(s * percent).quantize(Decimal("1.00")),
-                            Decimal(s * percent + s).quantize(Decimal("1.00"))])
+                tb.add_row([j, Decimal(s).quantize(Decimal('1.00')), Decimal(s * percent).quantize(Decimal('1.00')),
+                            Decimal(s * percent + s).quantize(Decimal('1.00'))])
                 capital = s * percent + s
                 s = capital + dop
             print(tb)
@@ -47,16 +47,16 @@ if d == 'месяц':
         print(1, 'год')
         tb.field_names = ['месяц', 'основа инвестиций', 'сумма % за месяц', 'капитал']
         for i in range(1, n + 1):
-            tb.add_row([i, Decimal(s).quantize(Decimal("1.00")), Decimal(s * percent).quantize(Decimal("1.00")),
-                        Decimal(s * percent + s).quantize(Decimal("1.00"))])
+            tb.add_row([i, Decimal(s).quantize(Decimal('1.00')), Decimal(s * percent).quantize(Decimal('1.00')),
+                        Decimal(s * percent + s).quantize(Decimal('1.00'))])
             capital = s * percent + s
             s = capital + dop
         print(tb)
 else:
     tb.field_names = ['год', 'основа инвестиций', 'сумма % за год', 'капитал']
     for i in range(1, n + 1):
-        tb.add_row([i, Decimal(s).quantize(Decimal("1.00")), Decimal(s * percent).quantize(Decimal("1.00")),
-                    Decimal(s * percent + s).quantize(Decimal("1.00"))])
+        tb.add_row([i, Decimal(s).quantize(Decimal('1.00')), Decimal(s * percent).quantize(Decimal('1.00')),
+                    Decimal(s * percent + s).quantize(Decimal('1.00'))])
         capital = s * percent + s
         s = capital + dop
     print(tb)
