@@ -26,8 +26,7 @@ else:
         answer = 'да'
         n = 1
 s = float(input('Начальный капитал ($):'))
-percent = input('Процентная ставка (%):').replace(',', '.')
-percent = float(int(percent) / 100)
+percent = float(input('Процентная ставка (%):').replace(',', '.')) / 100
 dop = int(input('Инвестиционные вливания ($/мес.):'))
 capital = 0
 
