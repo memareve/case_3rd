@@ -1,6 +1,6 @@
 # Case-study #3
 # Developers: Marinkin O. (30%),
-# Seledtsov A. (30%),
+# Seledtsov A. (25%),
 # Evdischenko M. (85%)
 
 from decimal import Decimal
